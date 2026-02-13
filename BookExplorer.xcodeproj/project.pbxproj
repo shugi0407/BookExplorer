@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		369807A12F3DE73D00EF04D0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 369807A02F3DE73D00EF04D0 /* Kingfisher */; };
+		369807A42F3DE78500EF04D0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 369807A32F3DE78500EF04D0 /* FirebaseAuth */; };
+		369807A62F3DE78500EF04D0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 369807A52F3DE78500EF04D0 /* FirebaseDatabase */; };
+		369807AE2F3DE93000EF04D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 369807AD2F3DE93000EF04D0 /* GoogleService-Info.plist */; };
+		36EBA4E92F3F2A4C00906AE8 /* .gitignore  in Resources */ = {isa = PBXBuildFile; fileRef = 36EBA4E82F3F2A4900906AE8 /* .gitignore  */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		369807832F3DE6D200EF04D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,22 +35,43 @@
 		369807732F3DE6D000EF04D0 /* BookExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		369807822F3DE6D200EF04D0 /* BookExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3698078C2F3DE6D200EF04D0 /* BookExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookExplorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		369807AD2F3DE93000EF04D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		36EBA4E82F3F2A4900906AE8 /* .gitignore  */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".gitignore "; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3698090B2F3E558600EF04D0 /* Exceptions for "BookExplorer" folder in "BookExplorer" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				tests/BookExplorerTests.swift,
+				tests/DebounceTests.swift,
+				tests/InputValidationTests.swift,
+				tests/MergePolicyTests.swift,
+				tests/ScoreBookUseCaseTests.swift,
+			);
+			target = 369807722F3DE6D000EF04D0 /* BookExplorer */;
+		};
+		3698090D2F3E558A00EF04D0 /* Exceptions for "BookExplorer" folder in "BookExplorerTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				tests/BookExplorerTests.swift,
+				tests/DebounceTests.swift,
+				tests/InputValidationTests.swift,
+				tests/MergePolicyTests.swift,
+				tests/ScoreBookUseCaseTests.swift,
+			);
+			target = 369807812F3DE6D200EF04D0 /* BookExplorerTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		369807752F3DE6D000EF04D0 /* BookExplorer */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3698090B2F3E558600EF04D0 /* Exceptions for "BookExplorer" folder in "BookExplorer" target */,
+				3698090D2F3E558A00EF04D0 /* Exceptions for "BookExplorer" folder in "BookExplorerTests" target */,
+			);
 			path = BookExplorer;
-			sourceTree = "<group>";
-		};
-		369807852F3DE6D200EF04D0 /* BookExplorerTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BookExplorerTests;
-			sourceTree = "<group>";
-		};
-		3698078F2F3DE6D200EF04D0 /* BookExplorerUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BookExplorerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369807A62F3DE78500EF04D0 /* FirebaseDatabase in Frameworks */,
+				369807A12F3DE73D00EF04D0 /* Kingfisher in Frameworks */,
+				369807A42F3DE78500EF04D0 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +107,9 @@
 		3698076A2F3DE6D000EF04D0 = {
 			isa = PBXGroup;
 			children = (
+				36EBA4E82F3F2A4900906AE8 /* .gitignore  */,
+				369807AD2F3DE93000EF04D0 /* GoogleService-Info.plist */,
 				369807752F3DE6D000EF04D0 /* BookExplorer */,
-				369807852F3DE6D200EF04D0 /* BookExplorerTests */,
-				3698078F2F3DE6D200EF04D0 /* BookExplorerUITests */,
 				369807742F3DE6D000EF04D0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +144,9 @@
 			);
 			name = BookExplorer;
 			packageProductDependencies = (
+				369807A02F3DE73D00EF04D0 /* Kingfisher */,
+				369807A32F3DE78500EF04D0 /* FirebaseAuth */,
+				369807A52F3DE78500EF04D0 /* FirebaseDatabase */,
 			);
 			productName = BookExplorer;
 			productReference = 369807732F3DE6D000EF04D0 /* BookExplorer.app */;
@@ -129,9 +164,6 @@
 			);
 			dependencies = (
 				369807842F3DE6D200EF04D0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				369807852F3DE6D200EF04D0 /* BookExplorerTests */,
 			);
 			name = BookExplorerTests;
 			packageProductDependencies = (
@@ -153,9 +185,6 @@
 			dependencies = (
 				3698078E2F3DE6D200EF04D0 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				3698078F2F3DE6D200EF04D0 /* BookExplorerUITests */,
-			);
 			name = BookExplorerUITests;
 			packageProductDependencies = (
 			);
@@ -175,6 +204,7 @@
 				TargetAttributes = {
 					369807722F3DE6D000EF04D0 = {
 						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
 					};
 					369807812F3DE6D200EF04D0 = {
 						CreatedOnToolsVersion = 26.2;
@@ -195,6 +225,10 @@
 			);
 			mainGroup = 3698076A2F3DE6D000EF04D0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3698079F2F3DE73D00EF04D0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				369807A22F3DE78500EF04D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 369807742F3DE6D000EF04D0 /* Products */;
 			projectDirPath = "";
@@ -212,6 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36EBA4E92F3F2A4C00906AE8 /* .gitignore  in Resources */,
+				369807AE2F3DE93000EF04D0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -413,6 +450,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -570,6 +609,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3698079F2F3DE73D00EF04D0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
+		369807A22F3DE78500EF04D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		369807A02F3DE73D00EF04D0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3698079F2F3DE73D00EF04D0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		369807A32F3DE78500EF04D0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 369807A22F3DE78500EF04D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		369807A52F3DE78500EF04D0 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 369807A22F3DE78500EF04D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3698076B2F3DE6D000EF04D0 /* Project object */;
 }
